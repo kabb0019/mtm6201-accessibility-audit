@@ -1,6 +1,5 @@
-
 html {
-  font-size: 16px;
+  font-size: 100%;
   box-sizing: border-box;
 }
 
@@ -16,9 +15,8 @@ body {
   line-height: 1.7;
 }
 
-
 *:focus {
-  outline: none;
+  outline: 2px solid #4a2c1a;
 }
 
 a {
@@ -93,8 +91,12 @@ nav a[aria-current="page"] {
 }
 
 @media (max-width: 640px) {
-  nav { display: none; }
-  .menu-toggle { display: block; }
+  nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
 }
 
 /* ── Hero ───────────────────────────────────────────────────────────────── */
@@ -164,7 +166,7 @@ nav a[aria-current="page"] {
   padding: 0 1.5rem;
 }
 
-.section h4 {
+.section h2 {
   font-size: 1.75rem;
   margin: 0 0 2.5rem;
   color: #2c1a0e;
@@ -183,7 +185,7 @@ nav a[aria-current="page"] {
   gap: 0.75rem;
 }
 
-.card h4 {
+.card h3 {
   font-size: 1.15rem;
   margin: 0;
 }
@@ -215,7 +217,7 @@ nav a[aria-current="page"] {
   display: block;
 }
 
-.story-text h4 {
+.story-text h2 {
   margin-bottom: 1rem;
 }
 
@@ -231,7 +233,7 @@ nav a[aria-current="page"] {
   gap: 4rem;
 }
 
-.contact-grid h4 {
+.contact-grid h2 {
   margin-bottom: 1rem;
 }
 
@@ -246,8 +248,7 @@ nav a[aria-current="page"] {
   gap: 0.75rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   width: 100%;
   padding: 0.65rem 0.85rem;
   border: 1px solid #c8b49a;
@@ -320,21 +321,16 @@ nav a[aria-current="page"] {
   .hero {
     grid-template-columns: 1fr;
   }
-
   .hero-content {
     padding: 3rem 1.5rem;
   }
-
   .hero-image {
     height: 260px;
   }
-
   .cards {
     grid-template-columns: 1fr;
   }
-
-  .two-col,
-  .contact-grid {
+  .two-col, .contact-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
